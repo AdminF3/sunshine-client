@@ -1,0 +1,16 @@
+.firstTabContainer, .secondTabContainer,
+.thirdTabContainer, .fourthTabContainer {
+  	width: 100%;
+  	box-sizing: border-box;
+}
+.firstTabContainer p, .secondTabContainer p,
+.thirdTabContainer p, .fourthTabContainer p {
+	color: #7f8fa4;
+	font-size: 14px;
+}
+.table {
+	width: 100%;
+}
+.centeredParagraph {
+	text-align: center;
+}

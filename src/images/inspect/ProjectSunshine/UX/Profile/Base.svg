@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Base</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-2.22044605e-14%" x2="50%" y2="98.0010364%" id="linearGradient-1">
+            <stop stop-color="#2EA1F8" offset="0%"></stop>
+            <stop stop-color="#1A91EC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="UX" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile" transform="translate(-996.000000, -400.000000)" fill="url(#linearGradient-1)">
+            <g id="Account-Details" transform="translate(280.000000, 166.000000)">
+                <g id="Right-Section" transform="translate(716.410256, 38.225693)">
+                    <g id="Twiter" transform="translate(0.000000, 196.635385)">
+                        <g id="Base">
+                            <path d="M4.34188034,0 L39.0769231,0 L39.0769231,38.680203 L4.34188034,38.680203 L4.34188034,38.680203 C1.94392604,38.680203 -1.48269213e-15,36.736277 -1.77635684e-15,34.3383227 L0,4.34188034 L0,4.34188034 C-2.93664706e-16,1.94392604 1.94392604,-1.33585978e-15 4.34188034,-1.77635684e-15 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

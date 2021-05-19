@@ -1,0 +1,7 @@
+{
+  "auth": {
+    "Invalid Credentials": "Невалидни потребител или парола!",
+    "This email is already taken.": "Тази електронна поща е вече заета.",
+    "You have successfully signed up!": "Успешна регистрация!"
+  }
+}
