@@ -1,0 +1,315 @@
+/* General Purpose CSS */
+.dropzone {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 0px dashed #EFF2F6;
+  margin: 15px;
+  padding: 0px;
+}
+
+.dropzone-active-drag {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px dashed #000;
+}
+
+/*Browser Compatible Color for Input Placeholder Text*/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: rgba(53, 64, 82, 0.35);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: rgba(53, 64, 82, 0.35);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: rgba(53, 64, 82, 0.35);
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(53, 64, 82, 0.35);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(53, 64, 82, 0.35);
+}
+
+/* Chrome Credentials Autofill CSS FIX */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 99999s ease-in-out 0s, color 99999s ease-in-out 0s;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/ODelI1aHBYDBqgeIAH2zlAC5S7WFEeHRqL6ObGQGT8o.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/ODelI1aHBYDBqgeIAH2zlMgmx_L9kV4w6g8dYQOLFUI.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/ODelI1aHBYDBqgeIAH2zlMODs9238LZG2v64UiBIjng.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/ODelI1aHBYDBqgeIAH2zlFjqPhnWKseBf12Mt9_m7kc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/ODelI1aHBYDBqgeIAH2zlNOAHFN6BivSraYkjhveRHY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+* {
+  font-family: 'Source Sans Pro' !important;
+}
+
+/* SideNav and TopNav CSS */
+.topnav {
+  height: 70px;
+  border-bottom: 2px solid #DFE2E5;
+}
+
+.menuTitle {
+  margin-left: 20px;
+  margin-top: 30px;
+	height: 14px;
+	width: 35px;
+	color: #7F8FA4;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+/* Login and Register Page CSS */
+
+.centered-logo {
+  height: 100px !important;
+  width: 100px !important;
+  left: 50%;
+  border-radius: 100%;
+  position: relative;
+  float: left;
+  transform: translate(-50%, -50%);
+}
+
+.special-bottom {
+  position: fixed;
+  min-width: 100%;
+  bottom: 20px;
+}
+
+.vertical-separator {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-left: 2px solid #354052;
+  height: 19px;
+  margin-top: auto;
+}
+
+.special-input {
+	height: 36px;
+	width: 370px;
+	border: 1px solid #DFE3E9;
+	border-radius: 4px;
+	background-color: #F8FAFC;
+}
+
+@media screen and (max-width: 700px) {
+  .special-input {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .special-input {
+    width: 260px;
+  }
+}
+
+.auth-label {
+	color: #7F8FA4;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 19px;
+}
+
+.auth-error {
+  margin-top: 5px;
+  color: #B33A3A;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.auth-warning {
+  margin-top: 5px;
+  color: #FF9900;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.form-heading {
+	color: #354052;
+	font-size: 26px;
+	line-height: 32px;
+  margin-top: 75px;
+  right: 50px;
+  position: relative;
+}
+
+@media screen and (max-width: 370px) {
+  .form-heading {
+    font-size: 21px;
+  }
+}
+
+.primary-redirect {
+	color: #BBBDBF;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 19px;
+	text-align: center;
+  text-decoration: none;
+}
+
+.secondary-redirect {
+	color: #354052;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 19px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+.secondary-redirect:hover{
+  cursor: pointer;
+  color: #BBBDBF;
+}
+
+.login-base {
+	min-height: 437px;
+	width: 450px;
+	border-radius: 0 4px 4px 0;
+	background-color: #FFFFFF;
+}
+
+.register-base {
+	/*min-height: 693px;*/
+	width: 480px;
+	border-radius: 0 4px 4px 0;
+	background-color: #FFFFFF;
+}
+
+.register-checkbox-text {
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.displayed-text {
+  text-align: left;
+  font-weight: normal;
+	max-width: 415.74px;
+	color: #354052;
+	font-size: 15.2px;
+	line-height: 20px;
+}
+.read-more-button {
+  display: inline-block;
+  margin-left: 3px;
+  color: #286DA8;
+  cursor: pointer;
+}
+
+.read-more-button:hover {
+  color: #4591d3;
+}
+
+.react-datepicker-popper { z-index: 3; }
+
+.hide-non-print { display: none; }
+
+.annex-inline-instruction {
+  font-weight: 200;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.annex-inline-instruction p {
+  margin: 0;
+}
+
+.annex-fraction-instruction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.annex-fraction-instruction > :first-child {
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.annex-fraction-instruction > :first-child::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+}
+
+table .annex-inline-input {
+  width: calc(100% + 12px);
+  margin-left: -8px !important;
+  margin-right: -8px;
+}

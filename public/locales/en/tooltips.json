@@ -1,0 +1,133 @@
+{
+  "organizations": {
+    "register": "If you did not find your organization, you can register it yourself.",
+    "publicSearchHint": "Search for your organization here.",
+    "info": [
+      "The first step when joining the platform is to become a member of the Organization(s) you belong to.",
+      "**Why do we need to know to which Organization you belong?**",
+      "To ensure you have the access to information in the platform.",
+      "In the **\"My Organizations\"** you see the Organizations you are part of. You can click on each Organization to see its detailed information. In the **\"All Organizations\"** page you will see all the Organizations that are registered in the platform. However, you will not be able to open the the Organization for which you do not have permission.",
+      "If you should be part of an Organization, click on **\"Request Membership\"**.",
+      "If you can’t find your Organization, you can register it yourself."
+    ],
+    "roles": [
+      "Click on the arrow to expand and see who is assigned to each of the roles. If you have permission, this is where you will assign roles to this Organization.",
+      "**Roles definitions:**",
+      "**Legal Entity Appointed Representative (LEAR):** The person appointed by an organization to manage its data in the platform. Must keep legal entity data up to date. An Organization can have only one **LEAR**.",
+      "**Legal Entity Account Administrator (LEAA):** Assists LEAR in their tasks. Cannot attribute other account administrators. Can assign project related roles. Each organization can have several **LEAA**s.",
+      "**Legal Signatory (LSIGN):** Person in a legal entity organization authorized to sign (on behalf of the organization) legal commitments for projects (i.e. contracts, agreements, amendments). Can overlap with the **LEAR** or be another person in the organization. Each organization can have several **LSIGN**s.",
+      "**Organization Member (ORME):** is part of the Organization. Cannot change its data, but can create Assets and Projects for the Organization."
+    ]
+  },
+  "assets": {
+    "register": [
+      "**Don’t see your asset? Register it here.**",
+      "To be able to register, you have to make sure that:",
+      "1) You have a document that shows the Asset's information (Cadastre number, heated area, number of staircases, etc.).",
+      "2) You are part of an Organization: because all Assets have to *\"belong\"* to an Organization, and you can only create an Assets for an Organization to which you belong.",
+      "If you don't have one or all of the above, but still want to add your Asset for renovation, contact us at **sunshinehelp@ekubirojs.lv** and we will guide you through the next steps."
+    ],
+    "publicSearchHint": "Too many assets? Search for yours here.",
+    "info": [
+      "In the **\"My Assets\"** page you can see the Assets you live in, or the ones that belong to Organization(s) you have a role in. You can click on each of your Assets to see its detailed information.",
+      "In the **\"All Assets\"** page you will see all Assets registered in the platform. However, you will not be able to open an Asset if you do not have the permission.",
+      "If you find your house, click on **\"I live here!\"** button to request to see the Asset's information. You will be required to upload any document that proves you are a resident."
+    ],
+    "assetInformation": {
+      "totalArea": "The total area for a residential building is determined by summing the area of all floors of the building (including the basement and attic floor) between the inner surfaces of the external walls, as well as the area of outdoor spaces - balconies, loggias and terraces. Attic (technical attic) and technical basement areas are not included in the total area of a residential building.",
+      "heatedArea": "The heated area of a building is determined by summing the area of all apartments and any staircases or other auxiliary rooms that are also heated.",
+      "billingArea": "The billing area or useful area of a building is determined by summing the total area of apartments in a residential building, the total area of non-residential premises and the total area of public premises, if there are any."
+    },
+    "assetFields": {
+      "cadastre": "ID number of the building, defined by the local municipality or country.",
+      "owner": "Choose the owner of the project from the list of Organizations you belong to.",
+      "residentsCommunity": "To be sure the residents can have access to the Building Information, a Residents' Community has to be created. This field now remains blank, and once the Organization is created, it will be filled in automatically by the system.",
+      "totalArea": "The total area for a residential building is determined by summing the area of all floors of the building (including the basement and attic floor) between the inner surfaces of the external walls, as well as the area of outdoor spaces - balconies, loggias and terraces. Attic (technical attic) and technical basement areas are not included in the total area of a residential building.",
+      "billingArea": "The billing area or useful area of a building is determined by summing the total area of apartments in a residential building, the total area of non-residential premises and the total area of public premises, if there are any.",
+      "heatedArea": "The heated area of a building is determined by summing the area of all apartments and any staircases or other auxiliary rooms that are also heated.",
+      "districtHeating": "Heating provided by other providers, such as city, municipality or other entities.",
+      "buildingHeating": "The building has its own means of providing heating."
+    }
+  },
+  "projects": {
+    "info": [
+      "In this page you can access all your projects to see the building metrics, current progress, parties involved, project team and more.",
+      "You can only see the projects in which you have a role assigned. If you do not see any of your projects, contact your project manger."
+    ],
+    "overview": [
+      "The **Project Overview** will show you how the Project is going.",
+      "The **EPC Contract & Forfaiting Agreement** section will allow you to fill in and print a final version of these contracts.",
+      "By opening the **Project phases**, you will see the breakdown of each phase, the activities to be performed and the milestones to be reached. This is where the project is managed."
+    ],
+    "guaranteedMetrics": "These are calculated metrics that are guaranteed for the building after the renovation is completed. They are valid once the EPC has been signed.",
+    "roles": [
+      "Click on the arrow to expand and see who is assigned to these roles. If you have permission, this is where you will assign roles to this Project.",
+      "**Roles definitions:**",
+      "**Project Manager (PM):** manages the project. Has full view and edit rights. Can manage project roles and complete milestones to open project phases.",
+      "There must be one PM by Project.",
+      "**Project Legal Signatory (PLSIGN):** Person authorized to sign legal commitments for a particular project. On a project there must be a PLSIGN per organization involved.",
+      "**Task Manager (TAME):** Person who can perform various actions for managing a particular task of a project.",
+      "**Team Member (TEME):** Person who has read-only rights for a particular project."
+    ],
+    "epc": {
+      "generalTerms": "**The General Terms of the EPC Contract** are the first part of the contract and are standardized. In this page the full text is available.",
+      "annexesInfo": [
+        "Click on the titles on the right to open the different annexes. On each page, you can fill in the tables and fields to complete the contract.",
+        "It is fundamental to have **all the information of the contract correct**, because it is retrieved by other sections of the project.",
+        "You can **download** the contract to see current version in PDF. Once the final version is signed, it must be uploaded to the respective project phase."
+      ],
+      "annexesExtraPage": [
+        "This extra page can be used to add other necessary information when signing to contract and to print **additional annexes** once the contract has been signed, but needs amendments.",
+        "In case of **amendments**, this page must be printed in separate and saved together with the **EPC contract**."
+      ],
+      "forfaitingAgreement": "You will have to prepare this agreement in case your project has been approved for forfaiting. This can only happen once the building has been commissioned and the measurements from an entire heating season have been recorded.",
+      "assetAcquisition": [
+        "This phase is constituted of **sequential milestones**.",
+        "Here you can see in which milestone the project is.",
+        "Each page is unlocked as soon as the **Project Manager** has completed the previous milestone."
+      ],
+      "assetAcquisitionCompleteMilestone": "Once all required requisites have been completed, the Project Manager should confirm that the Milestone is completed. This will lock this page and unlock the next milestone.",
+      "commissioningDateDisclamer": "The Years and Months of the Results Monitoring tables will be updated based on the date you complete this step. The first month to be monitored is the following month after you have completed this step.",
+      "worksPhase": [
+        "This phase is constituted of **concurrent milestones**.",
+        "By clicking on each one you can see in which milestone the project is.",
+        "The commissioning of the building will block previous milestones."
+      ],
+      "monitoringPhase": [
+        "This phase is constituted of **concurrent milestones**.",
+        "By clicking on each one you can see in which milestone the project is.",
+        "The commissioning of the building will block previous milestones."
+      ]
+    }
+  },
+  "users": {
+    "applyLEAR": "If you are LEAR of an Organization, you can apply to the role here. Select the Organization and provide supporting documentation that shows you are entitled to be the LEAR. You will be notified when your role is confirmed."
+  },
+  "reports": {
+    "info": "In these pages you will see only data related to the roles you have. Select the columns you want and make the export."
+  },
+  "admin": {
+    "platformRoles": [
+      "Click on a role panel from the list below to manage Users assigned to the platform role for the selected country.",
+      "**Each country has the following roles:**",
+      "**Portfolio Director:** Had access to specific reports for his country and its projects and Organizations with the goal of obtaining investments, inviting new stakeholders to platform and supporting them.",
+      "Sees all Projects and Assets in his country.",
+      "**Data Protection Officer:** Answers the requests related to GDPR.",
+      "**Super User:** Provides support to users within his country.",
+      "Works together with other Super Users to improve the platform.",
+      "Approves Assets and Organizations for his Country. Approves LEARs for Organizations.",
+      "Sees all Users, Assets, Organizations and Projects within his country to be able to support the users.",
+      "**Fund Manager:** Approves Funding for Project in his Country. Sees all projects in his country.",
+      "**Investor:** has access to forfaiting application pages for the project on their country."
+    ],
+    "rolePFM": [
+      "**Platform Manager:** Sees all data in the Platform.",
+      "Assigns other Platform and Country-level roles."
+    ],
+    "roleNWM": [
+      "**Super User Network Manager:** this is a platform-level role.",
+      "It can perform the same tasks as the Super Users, but for all the platforms (which means, all countries).",
+      "Performs Super User tasks for the Users, Assets and Organizations that belong to a country that does not have Super Users. Additionally, can assign and revoke the Super User role."
+    ]
+  }
+}

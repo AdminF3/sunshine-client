@@ -1,0 +1,10 @@
+#root > div {
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, .btn-print-wrapper {
+  display: none !important;
+}
+
+.hide-non-print { display: block !important; }

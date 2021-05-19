@@ -1,0 +1,15 @@
+# Folders
+.git/
+.gitlab/
+node_modules/
+
+# Files
+*.code-workspace
+.dockerignore
+.editorconfig
+.eslintrc.js
+.gitignore
+.gitlab-ci.yml
+Dockerfile
+Dockerfile.dev
+README.md

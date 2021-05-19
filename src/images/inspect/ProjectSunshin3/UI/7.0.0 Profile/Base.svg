@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Base</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7.0.0-Profile-" transform="translate(-996.000000, -373.000000)" fill="#2AA3F0">
+            <g id="Account-Details" transform="translate(280.000000, 166.000000)">
+                <g id="Right-Section" transform="translate(185.410256, 38.225693)">
+                    <g id="Twiter" transform="translate(531.000000, 169.635385)">
+                        <g id="Base">
+                            <path d="M4.34188034,0 L39.0769231,0 L39.0769231,38.680203 L4.34188034,38.680203 L4.34188034,38.680203 C1.94392604,38.680203 -1.48269213e-15,36.736277 -1.77635684e-15,34.3383227 L0,4.34188034 L0,4.34188034 C-2.93664706e-16,1.94392604 1.94392604,-1.33585978e-15 4.34188034,-1.77635684e-15 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,460 @@
+export const initialValues = (indoorClimaFields) => {
+    return(
+      {
+        // Attic data
+        atticZone1Area: indoorClimaFields ? indoorClimaFields.attic.zone1.area : 0,
+        atticZone2Area: indoorClimaFields ? indoorClimaFields.attic.zone2.area : 0,
+        atticZone1uValue: indoorClimaFields ? indoorClimaFields.attic.zone1.uvalue : 0,
+        atticZone2uValue: indoorClimaFields ? indoorClimaFields.attic.zone2.uvalue : 0,
+        atticZone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.attic.zone1.heatLossCoeff : 0,
+        atticZone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.attic.zone2.heatLossCoeff : 0,
+        
+        atticZone1OutTempBase: indoorClimaFields ? indoorClimaFields.attic.zone1.outdoorTemp.n : 0,
+        atticZone1OutTempBase1: indoorClimaFields ? indoorClimaFields.attic.zone1.outdoorTemp.n1 : 0,
+        atticZone1OutTempBase2: indoorClimaFields ? indoorClimaFields.attic.zone1.outdoorTemp.n2 : 0,
+        atticZone1TempDiffBase: indoorClimaFields ? indoorClimaFields.attic.zone1.tempDiff.n : 0,
+        atticZone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.attic.zone1.tempDiff.n1 : 0,
+        atticZone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.attic.zone1.tempDiff.n2 : 0,
+        
+        atticZone2OutTempBase: indoorClimaFields ? indoorClimaFields.attic.zone2.outdoorTemp.n : 0,
+        atticZone2OutTempBase1: indoorClimaFields ? indoorClimaFields.attic.zone2.outdoorTemp.n1 : 0,
+        atticZone2OutTempBase2: indoorClimaFields ? indoorClimaFields.attic.zone2.outdoorTemp.n2 : 0,
+        atticZone2TempDiffBase: indoorClimaFields ? indoorClimaFields.attic.zone2.tempDiff.n : 0,
+        atticZone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.attic.zone2.tempDiff.n1 : 0,
+        atticZone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.attic.zone2.tempDiff.n2 : 0,
+        
+        // Basement Ceiling data
+        basementCeilingZone1Area: indoorClimaFields ? indoorClimaFields.basementCeiling.zone1.area : 0,
+        basementCeilingZone2Area: indoorClimaFields ? indoorClimaFields.basementCeiling.zone2.area : 0,
+        basementCeilingZone1uValue: indoorClimaFields ? indoorClimaFields.basementCeiling.zone1.uvalue : 0,
+        basementCeilingZone2uValue: indoorClimaFields ? indoorClimaFields.basementCeiling.zone2.uvalue : 0,
+        basementCeilingZone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.basementCeiling.zone1.heatLossCoeff : 0,
+        basementCeilingZone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.basementCeiling.zone2.heatLossCoeff : 0,
+        
+        basementCeilingZone1OutTempBase: indoorClimaFields ? indoorClimaFields.basementCeiling.zone1.outdoorTemp.n : 0,
+        basementCeilingZone1OutTempBase1: indoorClimaFields ? indoorClimaFields.basementCeiling.zone1.outdoorTemp.n1 : 0,
+        basementCeilingZone1OutTempBase2: indoorClimaFields ? indoorClimaFields.basementCeiling.zone1.outdoorTemp.n2 : 0,
+        basementCeilingZone1TempDiffBase: indoorClimaFields ? indoorClimaFields.basementCeiling.zone1.tempDiff.n : 0,
+        basementCeilingZone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.basementCeiling.zone1.tempDiff.n1 : 0,
+        basementCeilingZone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.basementCeiling.zone1.tempDiff.n2 : 0,
+        
+        basementCeilingZone2OutTempBase: indoorClimaFields ? indoorClimaFields.basementCeiling.zone2.outdoorTemp.n : 0,
+        basementCeilingZone2OutTempBase1: indoorClimaFields ? indoorClimaFields.basementCeiling.zone2.outdoorTemp.n1 : 0,
+        basementCeilingZone2OutTempBase2: indoorClimaFields ? indoorClimaFields.basementCeiling.zone2.outdoorTemp.n2 : 0,
+        basementCeilingZone2TempDiffBase: indoorClimaFields ? indoorClimaFields.basementCeiling.zone2.tempDiff.n : 0,
+        basementCeilingZone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.basementCeiling.zone2.tempDiff.n1 : 0,
+        basementCeilingZone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.basementCeiling.zone2.tempDiff.n2 : 0,
+        
+        // Base Wall data
+        baseWallZone1Area: indoorClimaFields ? indoorClimaFields.baseWall.zone1.area : 0,
+        baseWallZone2Area: indoorClimaFields ? indoorClimaFields.baseWall.zone2.area : 0,
+        baseWallZone1uValue: indoorClimaFields ? indoorClimaFields.baseWall.zone1.uvalue : 0,
+        baseWallZone2uValue: indoorClimaFields ? indoorClimaFields.baseWall.zone2.uvalue : 0,
+        baseWallZone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.baseWall.zone1.heatLossCoeff : 0,
+        baseWallZone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.baseWall.zone2.heatLossCoeff : 0,
+        
+        baseWallZone1OutTempBase: indoorClimaFields ? indoorClimaFields.baseWall.zone1.outdoorTemp.n : 0,
+        baseWallZone1OutTempBase1: indoorClimaFields ? indoorClimaFields.baseWall.zone1.outdoorTemp.n1 : 0,
+        baseWallZone1OutTempBase2: indoorClimaFields ? indoorClimaFields.baseWall.zone1.outdoorTemp.n2 : 0,
+        baseWallZone1TempDiffBase: indoorClimaFields ? indoorClimaFields.baseWall.zone1.tempDiff.n : 0,
+        baseWallZone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.baseWall.zone1.tempDiff.n1 : 0,
+        baseWallZone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.baseWall.zone1.tempDiff.n2 : 0,
+        
+        baseWallZone2OutTempBase: indoorClimaFields ? indoorClimaFields.baseWall.zone2.outdoorTemp.n : 0,
+        baseWallZone2OutTempBase1: indoorClimaFields ? indoorClimaFields.baseWall.zone2.outdoorTemp.n1 : 0,
+        baseWallZone2OutTempBase2: indoorClimaFields ? indoorClimaFields.baseWall.zone2.outdoorTemp.n2 : 0,
+        baseWallZone2TempDiffBase: indoorClimaFields ? indoorClimaFields.baseWall.zone2.tempDiff.n : 0,
+        baseWallZone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.baseWall.zone2.tempDiff.n1 : 0,
+        baseWallZone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.baseWall.zone2.tempDiff.n2 : 0,
+        
+        // Slab on Ground data
+        groundZone1Area: indoorClimaFields ? indoorClimaFields.ground.zone1.area : 0,
+        groundZone2Area: indoorClimaFields ? indoorClimaFields.ground.zone2.area : 0,
+        groundZone1uValue: indoorClimaFields ? indoorClimaFields.ground.zone1.uvalue : 0,
+        groundZone2uValue: indoorClimaFields ? indoorClimaFields.ground.zone2.uvalue : 0,
+        groundZone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.ground.zone1.heatLossCoeff : 0,
+        groundZone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.ground.zone2.heatLossCoeff : 0,
+        
+        groundZone1OutTempBase: indoorClimaFields ? indoorClimaFields.ground.zone1.outdoorTemp.n : 0,
+        groundZone1OutTempBase1: indoorClimaFields ? indoorClimaFields.ground.zone1.outdoorTemp.n1 : 0,
+        groundZone1OutTempBase2: indoorClimaFields ? indoorClimaFields.ground.zone1.outdoorTemp.n2 : 0,
+        groundZone1TempDiffBase: indoorClimaFields ? indoorClimaFields.ground.zone1.tempDiff.n : 0,
+        groundZone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.ground.zone1.tempDiff.n1 : 0,
+        groundZone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.ground.zone1.tempDiff.n2 : 0,
+        
+        groundZone2OutTempBase: indoorClimaFields ? indoorClimaFields.ground.zone2.outdoorTemp.n : 0,
+        groundZone2OutTempBase1: indoorClimaFields ? indoorClimaFields.ground.zone2.outdoorTemp.n1 : 0,
+        groundZone2OutTempBase2: indoorClimaFields ? indoorClimaFields.ground.zone2.outdoorTemp.n2 : 0,
+        groundZone2TempDiffBase: indoorClimaFields ? indoorClimaFields.ground.zone2.tempDiff.n : 0,
+        groundZone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.ground.zone2.tempDiff.n1 : 0,
+        groundZone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.ground.zone2.tempDiff.n2 : 0,
+        
+        // Roof data
+        roofZone1Area: indoorClimaFields ? indoorClimaFields.roof.zone1.area : 0,
+        roofZone2Area: indoorClimaFields ? indoorClimaFields.roof.zone2.area : 0,
+        roofZone1uValue: indoorClimaFields ? indoorClimaFields.roof.zone1.uvalue : 0,
+        roofZone2uValue: indoorClimaFields ? indoorClimaFields.roof.zone2.uvalue : 0,
+        roofZone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.roof.zone1.heatLossCoeff : 0,
+        roofZone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.roof.zone2.heatLossCoeff : 0,
+        
+        roofZone1OutTempBase: indoorClimaFields ? indoorClimaFields.roof.zone1.outdoorTemp.n : 0,
+        roofZone1OutTempBase1: indoorClimaFields ? indoorClimaFields.roof.zone1.outdoorTemp.n1 : 0,
+        roofZone1OutTempBase2: indoorClimaFields ? indoorClimaFields.roof.zone1.outdoorTemp.n2 : 0,
+        roofZone1TempDiffBase: indoorClimaFields ? indoorClimaFields.roof.zone1.tempDiff.n : 0,
+        roofZone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.roof.zone1.tempDiff.n1 : 0,
+        roofZone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.roof.zone1.tempDiff.n2 : 0,
+        
+        roofZone2OutTempBase: indoorClimaFields ? indoorClimaFields.roof.zone2.outdoorTemp.n : 0,
+        roofZone2OutTempBase1: indoorClimaFields ? indoorClimaFields.roof.zone2.outdoorTemp.n1 : 0,
+        roofZone2OutTempBase2: indoorClimaFields ? indoorClimaFields.roof.zone2.outdoorTemp.n2 : 0,
+        roofZone2TempDiffBase: indoorClimaFields ? indoorClimaFields.roof.zone2.tempDiff.n : 0,
+        roofZone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.roof.zone2.tempDiff.n1 : 0,
+        roofZone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.roof.zone2.tempDiff.n2 : 0,
+        
+        // External door 1 data
+        externalDoor1Zone1Area: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone1.area : 0,
+        externalDoor1Zone2Area: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone2.area : 0,
+        externalDoor1Zone1uValue: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone1.uvalue : 0,
+        externalDoor1Zone2uValue: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone2.uvalue : 0,
+        externalDoor1Zone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone1.heatLossCoeff : 0,
+        externalDoor1Zone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone2.heatLossCoeff : 0,
+        
+        externalDoor1Zone1OutTempBase: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone1.outdoorTemp.n : 0,
+        externalDoor1Zone1OutTempBase1: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone1.outdoorTemp.n1 : 0,
+        externalDoor1Zone1OutTempBase2: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone1.outdoorTemp.n2 : 0,
+        externalDoor1Zone1TempDiffBase: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone1.tempDiff.n : 0,
+        externalDoor1Zone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone1.tempDiff.n1 : 0,
+        externalDoor1Zone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone1.tempDiff.n2 : 0,
+        
+        externalDoor1Zone2OutTempBase: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone2.outdoorTemp.n : 0,
+        externalDoor1Zone2OutTempBase1: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone2.outdoorTemp.n1 : 0,
+        externalDoor1Zone2OutTempBase2: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone2.outdoorTemp.n2 : 0,
+        externalDoor1Zone2TempDiffBase: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone2.tempDiff.n : 0,
+        externalDoor1Zone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone2.tempDiff.n1 : 0,
+        externalDoor1Zone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.externalDoor.num1.zone2.tempDiff.n2 : 0,
+        
+        // External door 2 data
+        externalDoor2Zone1Area: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone1.area : 0,
+        externalDoor2Zone2Area: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone2.area : 0,
+        externalDoor2Zone1uValue: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone1.uvalue : 0,
+        externalDoor2Zone2uValue: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone2.uvalue : 0,
+        externalDoor2Zone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone1.heatLossCoeff : 0,
+        externalDoor2Zone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone2.heatLossCoeff : 0,
+        
+        externalDoor2Zone1OutTempBase: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone1.outdoorTemp.n : 0,
+        externalDoor2Zone1OutTempBase1: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone1.outdoorTemp.n1 : 0,
+        externalDoor2Zone1OutTempBase2: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone1.outdoorTemp.n2 : 0,
+        externalDoor2Zone1TempDiffBase: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone1.tempDiff.n : 0,
+        externalDoor2Zone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone1.tempDiff.n1 : 0,
+        externalDoor2Zone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone1.tempDiff.n2 : 0,
+        
+        externalDoor2Zone2OutTempBase: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone2.outdoorTemp.n : 0,
+        externalDoor2Zone2OutTempBase1: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone2.outdoorTemp.n1 : 0,
+        externalDoor2Zone2OutTempBase2: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone2.outdoorTemp.n2 : 0,
+        externalDoor2Zone2TempDiffBase: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone2.tempDiff.n : 0,
+        externalDoor2Zone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone2.tempDiff.n1 : 0,
+        externalDoor2Zone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.externalDoor.num2.zone2.tempDiff.n2 : 0,
+        
+        // External wall 1 data
+        externalWall1Zone1Area: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone1.area : 0,
+        externalWall1Zone2Area: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone2.area : 0,
+        externalWall1Zone1uValue: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone1.uvalue : 0,
+        externalWall1Zone2uValue: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone2.uvalue : 0,
+        externalWall1Zone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone1.heatLossCoeff : 0,
+        externalWall1Zone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone2.heatLossCoeff : 0,
+        
+        externalWall1Zone1OutTempBase: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone1.outdoorTemp.n : 0,
+        externalWall1Zone1OutTempBase1: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone1.outdoorTemp.n1 : 0,
+        externalWall1Zone1OutTempBase2: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone1.outdoorTemp.n2 : 0,
+        externalWall1Zone1TempDiffBase: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone1.tempDiff.n : 0,
+        externalWall1Zone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone1.tempDiff.n1 : 0,
+        externalWall1Zone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone1.tempDiff.n2 : 0,
+        
+        externalWall1Zone2OutTempBase: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone2.outdoorTemp.n : 0,
+        externalWall1Zone2OutTempBase1: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone2.outdoorTemp.n1 : 0,
+        externalWall1Zone2OutTempBase2: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone2.outdoorTemp.n2 : 0,
+        externalWall1Zone2TempDiffBase: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone2.tempDiff.n : 0,
+        externalWall1Zone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone2.tempDiff.n1 : 0,
+        externalWall1Zone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.externalWall.num1.zone2.tempDiff.n2 : 0,
+        
+        // External wall 2 data
+        externalWall2Zone1Area: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone1.area : 0,
+        externalWall2Zone2Area: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone2.area : 0,
+        externalWall2Zone1uValue: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone1.uvalue : 0,
+        externalWall2Zone2uValue: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone2.uvalue : 0,
+        externalWall2Zone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone1.heatLossCoeff : 0,
+        externalWall2Zone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone2.heatLossCoeff : 0,
+        
+        externalWall2Zone1OutTempBase: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone1.outdoorTemp.n : 0,
+        externalWall2Zone1OutTempBase1: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone1.outdoorTemp.n1 : 0,
+        externalWall2Zone1OutTempBase2: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone1.outdoorTemp.n2 : 0,
+        externalWall2Zone1TempDiffBase: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone1.tempDiff.n : 0,
+        externalWall2Zone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone1.tempDiff.n1 : 0,
+        externalWall2Zone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone1.tempDiff.n2 : 0,
+        
+        externalWall2Zone2OutTempBase: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone2.outdoorTemp.n : 0,
+        externalWall2Zone2OutTempBase1: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone2.outdoorTemp.n1 : 0,
+        externalWall2Zone2OutTempBase2: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone2.outdoorTemp.n2 : 0,
+        externalWall2Zone2TempDiffBase: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone2.tempDiff.n : 0,
+        externalWall2Zone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone2.tempDiff.n1 : 0,
+        externalWall2Zone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.externalWall.num2.zone2.tempDiff.n2 : 0,
+        
+        // External wall 3 data
+        externalWall3Zone1Area: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone1.area : 0,
+        externalWall3Zone2Area: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone2.area : 0,
+        externalWall3Zone1uValue: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone1.uvalue : 0,
+        externalWall3Zone2uValue: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone2.uvalue : 0,
+        externalWall3Zone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone1.heatLossCoeff : 0,
+        externalWall3Zone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone2.heatLossCoeff : 0,
+        
+        externalWall3Zone1OutTempBase: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone1.outdoorTemp.n : 0,
+        externalWall3Zone1OutTempBase1: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone1.outdoorTemp.n1 : 0,
+        externalWall3Zone1OutTempBase2: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone1.outdoorTemp.n2 : 0,
+        externalWall3Zone1TempDiffBase: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone1.tempDiff.n : 0,
+        externalWall3Zone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone1.tempDiff.n1 : 0,
+        externalWall3Zone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone1.tempDiff.n2 : 0,
+        
+        externalWall3Zone2OutTempBase: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone2.outdoorTemp.n : 0,
+        externalWall3Zone2OutTempBase1: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone2.outdoorTemp.n1 : 0,
+        externalWall3Zone2OutTempBase2: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone2.outdoorTemp.n2 : 0,
+        externalWall3Zone2TempDiffBase: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone2.tempDiff.n : 0,
+        externalWall3Zone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone2.tempDiff.n1 : 0,
+        externalWall3Zone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.externalWall.num3.zone2.tempDiff.n2 : 0,
+        
+        // External wall 4 data
+        externalWall4Zone1Area: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone1.area : 0,
+        externalWall4Zone2Area: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone2.area : 0,
+        externalWall4Zone1uValue: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone1.uvalue : 0,
+        externalWall4Zone2uValue: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone2.uvalue : 0,
+        externalWall4Zone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone1.heatLossCoeff : 0,
+        externalWall4Zone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone2.heatLossCoeff : 0,
+        
+        externalWall4Zone1OutTempBase: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone1.outdoorTemp.n : 0,
+        externalWall4Zone1OutTempBase1: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone1.outdoorTemp.n1 : 0,
+        externalWall4Zone1OutTempBase2: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone1.outdoorTemp.n2 : 0,
+        externalWall4Zone1TempDiffBase: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone1.tempDiff.n : 0,
+        externalWall4Zone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone1.tempDiff.n1 : 0,
+        externalWall4Zone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone1.tempDiff.n2 : 0,
+        
+        externalWall4Zone2OutTempBase: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone2.outdoorTemp.n : 0,
+        externalWall4Zone2OutTempBase1: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone2.outdoorTemp.n1 : 0,
+        externalWall4Zone2OutTempBase2: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone2.outdoorTemp.n2 : 0,
+        externalWall4Zone2TempDiffBase: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone2.tempDiff.n : 0,
+        externalWall4Zone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone2.tempDiff.n1 : 0,
+        externalWall4Zone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.externalWall.num4.zone2.tempDiff.n2 : 0,
+        
+        // Window 1 data
+        window1Zone1Area: indoorClimaFields ? indoorClimaFields.window.num1.zone1.area : 0,
+        window1Zone2Area: indoorClimaFields ? indoorClimaFields.window.num1.zone2.area : 0,
+        window1Zone1uValue: indoorClimaFields ? indoorClimaFields.window.num1.zone1.uvalue : 0,
+        window1Zone2uValue: indoorClimaFields ? indoorClimaFields.window.num1.zone2.uvalue : 0,
+        window1Zone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.window.num1.zone1.heatLossCoeff : 0,
+        window1Zone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.window.num1.zone2.heatLossCoeff : 0,
+        
+        window1Zone1OutTempBase: indoorClimaFields ? indoorClimaFields.window.num1.zone1.outdoorTemp.n : 0,
+        window1Zone1OutTempBase1: indoorClimaFields ? indoorClimaFields.window.num1.zone1.outdoorTemp.n1 : 0,
+        window1Zone1OutTempBase2: indoorClimaFields ? indoorClimaFields.window.num1.zone1.outdoorTemp.n2 : 0,
+        window1Zone1TempDiffBase: indoorClimaFields ? indoorClimaFields.window.num1.zone1.tempDiff.n : 0,
+        window1Zone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.window.num1.zone1.tempDiff.n1 : 0,
+        window1Zone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.window.num1.zone1.tempDiff.n2 : 0,
+        
+        window1Zone2OutTempBase: indoorClimaFields ? indoorClimaFields.window.num1.zone2.outdoorTemp.n : 0,
+        window1Zone2OutTempBase1: indoorClimaFields ? indoorClimaFields.window.num1.zone2.outdoorTemp.n1 : 0,
+        window1Zone2OutTempBase2: indoorClimaFields ? indoorClimaFields.window.num1.zone2.outdoorTemp.n2 : 0,
+        window1Zone2TempDiffBase: indoorClimaFields ? indoorClimaFields.window.num1.zone2.tempDiff.n : 0,
+        window1Zone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.window.num1.zone2.tempDiff.n1 : 0,
+        window1Zone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.window.num1.zone2.tempDiff.n2 : 0,
+        
+        // Window 2 data
+        window2Zone1Area: indoorClimaFields ? indoorClimaFields.window.num2.zone1.area : 0,
+        window2Zone2Area: indoorClimaFields ? indoorClimaFields.window.num2.zone2.area : 0,
+        window2Zone1uValue: indoorClimaFields ? indoorClimaFields.window.num2.zone1.uvalue : 0,
+        window2Zone2uValue: indoorClimaFields ? indoorClimaFields.window.num2.zone2.uvalue : 0,
+        window2Zone1HeatLossCoeff: indoorClimaFields ? indoorClimaFields.window.num2.zone1.heatLossCoeff : 0,
+        window2Zone2HeatLossCoeff: indoorClimaFields ? indoorClimaFields.window.num2.zone2.heatLossCoeff : 0,
+        
+        window2Zone1OutTempBase: indoorClimaFields ? indoorClimaFields.window.num2.zone1.outdoorTemp.n : 0,
+        window2Zone1OutTempBase1: indoorClimaFields ? indoorClimaFields.window.num2.zone1.outdoorTemp.n1 : 0,
+        window2Zone1OutTempBase2: indoorClimaFields ? indoorClimaFields.window.num2.zone1.outdoorTemp.n2 : 0,
+        window2Zone1TempDiffBase: indoorClimaFields ? indoorClimaFields.window.num2.zone1.tempDiff.n : 0,
+        window2Zone1TempDiffBase1: indoorClimaFields ? indoorClimaFields.window.num2.zone1.tempDiff.n1 : 0,
+        window2Zone1TempDiffBase2: indoorClimaFields ? indoorClimaFields.window.num2.zone1.tempDiff.n2 : 0,
+        
+        window2Zone2OutTempBase: indoorClimaFields ? indoorClimaFields.window.num2.zone2.outdoorTemp.n : 0,
+        window2Zone2OutTempBase1: indoorClimaFields ? indoorClimaFields.window.num2.zone2.outdoorTemp.n1 : 0,
+        window2Zone2OutTempBase2: indoorClimaFields ? indoorClimaFields.window.num2.zone2.outdoorTemp.n2 : 0,
+        window2Zone2TempDiffBase: indoorClimaFields ? indoorClimaFields.window.num2.zone2.tempDiff.n : 0,
+        window2Zone2TempDiffBase1: indoorClimaFields ? indoorClimaFields.window.num2.zone2.tempDiff.n1 : 0,
+        window2Zone2TempDiffBase2: indoorClimaFields ? indoorClimaFields.window.num2.zone2.tempDiff.n2 : 0,
+        
+        // Totals And Indoor Temperature
+        totalHt: indoorClimaFields ? indoorClimaFields.total_ht : 0,
+        heatGainsInternal: indoorClimaFields ? indoorClimaFields.heatgains_internal : 0,
+        heatGainsSolar: indoorClimaFields ? indoorClimaFields.heatgains_solar : 0,
+        heatedVolumeBuilding: indoorClimaFields ? indoorClimaFields.heated_volume_building : 0,
+        totalHtZone1: indoorClimaFields ? indoorClimaFields.total_ht_zone1 : 0,
+        totalHtZone2: indoorClimaFields ? indoorClimaFields.total_ht_zone2 : 0,
+        
+        airExchangeReplacedWindowsBase: indoorClimaFields ? indoorClimaFields.airexWindows.n : 0,
+        airExchangeReplacedWindowsBase1: indoorClimaFields ? indoorClimaFields.airexWindows.n1 : 0,
+        airExchangeReplacedWindowsBase2: indoorClimaFields ? indoorClimaFields.airexWindows.n2 : 0,
+        
+        airExchangeBuildingBase: indoorClimaFields ? indoorClimaFields.airexBuilding.n : 0,
+        airExchangeBuildingBase1: indoorClimaFields ? indoorClimaFields.airexBuilding.n1 : 0,
+        airExchangeBuildingBase2: indoorClimaFields ? indoorClimaFields.airexBuilding.n2 : 0,
+        
+        airExchangeTotalBase: indoorClimaFields ? indoorClimaFields.airexTotal.n : 0,
+        airExchangeTotalBase1: indoorClimaFields ? indoorClimaFields.airexTotal.n1 : 0,
+        airExchangeTotalBase2: indoorClimaFields ? indoorClimaFields.airexTotal.n2 : 0,
+        
+        totalEnergyConsumptionBase: indoorClimaFields ? indoorClimaFields.totalEnergyConsumption.n : 0,
+        totalEnergyConsumptionBase1: indoorClimaFields ? indoorClimaFields.totalEnergyConsumption.n1 : 0,
+        totalEnergyConsumptionBase2: indoorClimaFields ? indoorClimaFields.totalEnergyConsumption.n2 : 0,
+        
+        totalEnergyConsumptionCirculationBase: indoorClimaFields ? indoorClimaFields.totalEConsumptionCircLosses.n : 0,
+        totalEnergyConsumptionCirculationBase1: indoorClimaFields ? indoorClimaFields.totalEConsumptionCircLosses.n1 : 0,
+        totalEnergyConsumptionCirculationBase2: indoorClimaFields ? indoorClimaFields.totalEConsumptionCircLosses.n2 : 0,
+        
+        circulationLossesBase: indoorClimaFields ? indoorClimaFields.circulationLosses.n : 0,
+        circulationLossesBase1: indoorClimaFields ? indoorClimaFields.circulationLosses.n1 : 0,
+        circulationLossesBase2: indoorClimaFields ? indoorClimaFields.circulationLosses.n2 : 0,
+        
+        distributionLossesBasement: indoorClimaFields ? indoorClimaFields.distributionLossesBasement : 0,
+        distributionLossesAttic: indoorClimaFields ? indoorClimaFields.distributionLossesAttic : 0,
+        
+        totalMeasuredBase: indoorClimaFields ? indoorClimaFields.totalMeasured.n : 0,
+        totalMeasuredBase1: indoorClimaFields ? indoorClimaFields.totalMeasured.n1 : 0,
+        totalMeasuredBase2: indoorClimaFields ? indoorClimaFields.totalMeasured.n2 : 0,
+        
+        totalCalculatedBase: indoorClimaFields ? indoorClimaFields.totalCalculated.n : 0,
+        totalCalculatedBase1: indoorClimaFields ? indoorClimaFields.totalCalculated.n1 : 0,
+        totalCalculatedBase2: indoorClimaFields ? indoorClimaFields.totalCalculated.n2 : 0,
+        
+        indoorTemperatureBase: indoorClimaFields ? indoorClimaFields.indoorTemp.n : 0,
+        indoorTemperatureBase1: indoorClimaFields ? indoorClimaFields.indoorTemp.n1 : 0,
+        indoorTemperatureBase2: indoorClimaFields ? indoorClimaFields.indoorTemp.n2 : 0,
+        
+        // Basement Pipes
+        basementPipesQuiality: indoorClimaFields ? indoorClimaFields.basementPipes[0].pipe.quality : 0,
+        basementPipesInstalledlength: indoorClimaFields ? indoorClimaFields.basementPipes[0].pipe.installedLength : 0,
+        basementPipesDiameter: indoorClimaFields ? indoorClimaFields.basementPipes[0].pipe.diameter : 0,
+        basementPipesHeatLossUnit: indoorClimaFields ? indoorClimaFields.basementPipes[0].pipe.heatLossUnit : 0,
+        basementPipesHeatLossYear: indoorClimaFields ? indoorClimaFields.basementPipes[0].pipe.heatLossYear : 0,
+        
+        basementPipesQuiality1: indoorClimaFields ? indoorClimaFields.basementPipes[1].pipe.quality : 0,
+        basementPipesInstalledlength1: indoorClimaFields ? indoorClimaFields.basementPipes[1].pipe.installedLength : 0,
+        basementPipesDiameter1: indoorClimaFields ? indoorClimaFields.basementPipes[1].pipe.diameter : 0,
+        basementPipesHeatLossUnit1: indoorClimaFields ? indoorClimaFields.basementPipes[1].pipe.heatLossUnit : 0,
+        basementPipesHeatLossYear1: indoorClimaFields ? indoorClimaFields.basementPipes[1].pipe.heatLossYear : 0,
+        
+        basementPipesQuiality2: indoorClimaFields ? indoorClimaFields.basementPipes[2].pipe.quality : 0,
+        basementPipesInstalledlength2: indoorClimaFields ? indoorClimaFields.basementPipes[2].pipe.installedLength : 0,
+        basementPipesDiameter2: indoorClimaFields ? indoorClimaFields.basementPipes[2].pipe.diameter : 0,
+        basementPipesHeatLossUnit2: indoorClimaFields ? indoorClimaFields.basementPipes[2].pipe.heatLossUnit : 0,
+        basementPipesHeatLossYear2: indoorClimaFields ? indoorClimaFields.basementPipes[2].pipe.heatLossYear : 0,
+        
+        basementPipesQuiality3: indoorClimaFields ? indoorClimaFields.basementPipes[3].pipe.quality : 0,
+        basementPipesInstalledlength3: indoorClimaFields ? indoorClimaFields.basementPipes[3].pipe.installedLength : 0,
+        basementPipesDiameter3: indoorClimaFields ? indoorClimaFields.basementPipes[3].pipe.diameter : 0,
+        basementPipesHeatLossUnit3: indoorClimaFields ? indoorClimaFields.basementPipes[3].pipe.heatLossUnit : 0,
+        basementPipesHeatLossYear3: indoorClimaFields ? indoorClimaFields.basementPipes[3].pipe.heatLossYear : 0,
+        
+        basementPipesQuiality4: indoorClimaFields ? indoorClimaFields.basementPipes[4].pipe.quality : 0,
+        basementPipesInstalledlength4: indoorClimaFields ? indoorClimaFields.basementPipes[4].pipe.installedLength : 0,
+        basementPipesDiameter4: indoorClimaFields ? indoorClimaFields.basementPipes[4].pipe.diameter : 0,
+        basementPipesHeatLossUnit4: indoorClimaFields ? indoorClimaFields.basementPipes[4].pipe.heatLossUnit : 0,
+        basementPipesHeatLossYear4: indoorClimaFields ? indoorClimaFields.basementPipes[4].pipe.heatLossYear : 0,
+        
+        basementPipesQuiality5: indoorClimaFields ? indoorClimaFields.basementPipes[5].pipe.quality : 0,
+        basementPipesInstalledlength5: indoorClimaFields ? indoorClimaFields.basementPipes[5].pipe.installedLength : 0,
+        basementPipesDiameter5: indoorClimaFields ? indoorClimaFields.basementPipes[5].pipe.diameter : 0,
+        basementPipesHeatLossUnit5: indoorClimaFields ? indoorClimaFields.basementPipes[5].pipe.heatLossUnit : 0,
+        basementPipesHeatLossYear5: indoorClimaFields ? indoorClimaFields.basementPipes[5].pipe.heatLossYear : 0,
+        
+        basementPipesQuiality6: indoorClimaFields ? indoorClimaFields.basementPipes[6].pipe.quality : 0,
+        basementPipesInstalledlength6: indoorClimaFields ? indoorClimaFields.basementPipes[6].pipe.installedLength : 0,
+        basementPipesDiameter6: indoorClimaFields ? indoorClimaFields.basementPipes[6].pipe.diameter : 0,
+        basementPipesHeatLossUnit6: indoorClimaFields ? indoorClimaFields.basementPipes[6].pipe.heatLossUnit : 0,
+        basementPipesHeatLossYear6: indoorClimaFields ? indoorClimaFields.basementPipes[6].pipe.heatLossYear : 0,
+        
+        basementPipesQuiality7: indoorClimaFields ? indoorClimaFields.basementPipes[7].pipe.quality : 0,
+        basementPipesInstalledlength7: indoorClimaFields ? indoorClimaFields.basementPipes[7].pipe.installedLength : 0,
+        basementPipesDiameter7: indoorClimaFields ? indoorClimaFields.basementPipes[7].pipe.diameter : 0,
+        basementPipesHeatLossUnit7: indoorClimaFields ? indoorClimaFields.basementPipes[7].pipe.heatLossUnit : 0,
+        basementPipesHeatLossYear7: indoorClimaFields ? indoorClimaFields.basementPipes[7].pipe.heatLossYear : 0,
+        
+        basementPipesQuiality8: indoorClimaFields ? indoorClimaFields.basementPipes[8].pipe.quality : 0,
+        basementPipesInstalledlength8: indoorClimaFields ? indoorClimaFields.basementPipes[8].pipe.installedLength : 0,
+        basementPipesDiameter8: indoorClimaFields ? indoorClimaFields.basementPipes[8].pipe.diameter : 0,
+        basementPipesHeatLossUnit8: indoorClimaFields ? indoorClimaFields.basementPipes[8].pipe.heatLossUnit : 0,
+        basementPipesHeatLossYear8: indoorClimaFields ? indoorClimaFields.basementPipes[8].pipe.heatLossYear : 0,
+        
+        basementPipesQuiality9: indoorClimaFields ? indoorClimaFields.basementPipes[9].pipe.quality : 0,
+        basementPipesInstalledlength9: indoorClimaFields ? indoorClimaFields.basementPipes[9].pipe.installedLength : 0,
+        basementPipesDiameter9: indoorClimaFields ? indoorClimaFields.basementPipes[9].pipe.diameter : 0,
+        basementPipesHeatLossUnit9: indoorClimaFields ? indoorClimaFields.basementPipes[9].pipe.heatLossUnit : 0,
+        basementPipesHeatLossYear9: indoorClimaFields ? indoorClimaFields.basementPipes[9].pipe.heatLossYear : 0,
+        
+        // Attic Pipes
+        atticPipesQuiality: indoorClimaFields ? indoorClimaFields.atticPipes[0].pipe.quality : 0,
+        atticPipesInstalledlength: indoorClimaFields ? indoorClimaFields.atticPipes[0].pipe.installedLength : 0,
+        atticPipesDiameter: indoorClimaFields ? indoorClimaFields.atticPipes[0].pipe.diameter : 0,
+        atticPipesHeatLossUnit: indoorClimaFields ? indoorClimaFields.atticPipes[0].pipe.heatLossUnit : 0,
+        atticPipesHeatLossYear: indoorClimaFields ? indoorClimaFields.atticPipes[0].pipe.heatLossYear : 0,
+        
+        atticPipesQuiality1: indoorClimaFields ? indoorClimaFields.atticPipes[1].pipe.quality : 0,
+        atticPipesInstalledlength1: indoorClimaFields ? indoorClimaFields.atticPipes[1].pipe.installedLength : 0,
+        atticPipesDiameter1: indoorClimaFields ? indoorClimaFields.atticPipes[1].pipe.diameter : 0,
+        atticPipesHeatLossUnit1: indoorClimaFields ? indoorClimaFields.atticPipes[1].pipe.heatLossUnit : 0,
+        atticPipesHeatLossYear1: indoorClimaFields ? indoorClimaFields.atticPipes[1].pipe.heatLossYear : 0,
+        
+        atticPipesQuiality2: indoorClimaFields ? indoorClimaFields.atticPipes[2].pipe.quality : 0,
+        atticPipesInstalledlength2: indoorClimaFields ? indoorClimaFields.atticPipes[2].pipe.installedLength : 0,
+        atticPipesDiameter2: indoorClimaFields ? indoorClimaFields.atticPipes[2].pipe.diameter : 0,
+        atticPipesHeatLossUnit2: indoorClimaFields ? indoorClimaFields.atticPipes[2].pipe.heatLossUnit : 0,
+        atticPipesHeatLossYear2: indoorClimaFields ? indoorClimaFields.atticPipes[2].pipe.heatLossYear : 0,
+        
+        atticPipesQuiality3: indoorClimaFields ? indoorClimaFields.atticPipes[3].pipe.quality : 0,
+        atticPipesInstalledlength3: indoorClimaFields ? indoorClimaFields.atticPipes[3].pipe.installedLength : 0,
+        atticPipesDiameter3: indoorClimaFields ? indoorClimaFields.atticPipes[3].pipe.diameter : 0,
+        atticPipesHeatLossUnit3: indoorClimaFields ? indoorClimaFields.atticPipes[3].pipe.heatLossUnit : 0,
+        atticPipesHeatLossYear3: indoorClimaFields ? indoorClimaFields.atticPipes[3].pipe.heatLossYear : 0,
+        
+        atticPipesQuiality4: indoorClimaFields ? indoorClimaFields.atticPipes[4].pipe.quality : 0,
+        atticPipesInstalledlength4: indoorClimaFields ? indoorClimaFields.atticPipes[4].pipe.installedLength : 0,
+        atticPipesDiameter4: indoorClimaFields ? indoorClimaFields.atticPipes[4].pipe.diameter : 0,
+        atticPipesHeatLossUnit4: indoorClimaFields ? indoorClimaFields.atticPipes[4].pipe.heatLossUnit : 0,
+        atticPipesHeatLossYear4: indoorClimaFields ? indoorClimaFields.atticPipes[4].pipe.heatLossYear : 0,
+        
+        atticPipesQuiality5: indoorClimaFields ? indoorClimaFields.atticPipes[5].pipe.quality : 0,
+        atticPipesInstalledlength5: indoorClimaFields ? indoorClimaFields.atticPipes[5].pipe.installedLength : 0,
+        atticPipesDiameter5: indoorClimaFields ? indoorClimaFields.atticPipes[5].pipe.diameter : 0,
+        atticPipesHeatLossUnit5: indoorClimaFields ? indoorClimaFields.atticPipes[5].pipe.heatLossUnit : 0,
+        atticPipesHeatLossYear5: indoorClimaFields ? indoorClimaFields.atticPipes[5].pipe.heatLossYear : 0,
+        
+        atticPipesQuiality6: indoorClimaFields ? indoorClimaFields.atticPipes[6].pipe.quality : 0,
+        atticPipesInstalledlength6: indoorClimaFields ? indoorClimaFields.atticPipes[6].pipe.installedLength : 0,
+        atticPipesDiameter6: indoorClimaFields ? indoorClimaFields.atticPipes[6].pipe.diameter : 0,
+        atticPipesHeatLossUnit6: indoorClimaFields ? indoorClimaFields.atticPipes[6].pipe.heatLossUnit : 0,
+        atticPipesHeatLossYear6: indoorClimaFields ? indoorClimaFields.atticPipes[6].pipe.heatLossYear : 0,
+        
+        atticPipesQuiality7: indoorClimaFields ? indoorClimaFields.atticPipes[7].pipe.quality : 0,
+        atticPipesInstalledlength7: indoorClimaFields ? indoorClimaFields.atticPipes[7].pipe.installedLength : 0,
+        atticPipesDiameter7: indoorClimaFields ? indoorClimaFields.atticPipes[7].pipe.diameter : 0,
+        atticPipesHeatLossUnit7: indoorClimaFields ? indoorClimaFields.atticPipes[7].pipe.heatLossUnit : 0,
+        atticPipesHeatLossYear7: indoorClimaFields ? indoorClimaFields.atticPipes[7].pipe.heatLossYear : 0,
+        
+        atticPipesQuiality8: indoorClimaFields ? indoorClimaFields.atticPipes[8].pipe.quality : 0,
+        atticPipesInstalledlength8: indoorClimaFields ? indoorClimaFields.atticPipes[8].pipe.installedLength : 0,
+        atticPipesDiameter8: indoorClimaFields ? indoorClimaFields.atticPipes[8].pipe.diameter : 0,
+        atticPipesHeatLossUnit8: indoorClimaFields ? indoorClimaFields.atticPipes[8].pipe.heatLossUnit : 0,
+        atticPipesHeatLossYear8: indoorClimaFields ? indoorClimaFields.atticPipes[8].pipe.heatLossYear : 0,
+        
+        atticPipesQuiality9: indoorClimaFields ? indoorClimaFields.atticPipes[9].pipe.quality : 0,
+        atticPipesInstalledlength9: indoorClimaFields ? indoorClimaFields.atticPipes[9].pipe.installedLength : 0,
+        atticPipesDiameter9: indoorClimaFields ? indoorClimaFields.atticPipes[9].pipe.diameter : 0,
+        atticPipesHeatLossUnit9: indoorClimaFields ? indoorClimaFields.atticPipes[9].pipe.heatLossUnit : 0,
+        atticPipesHeatLossYear9: indoorClimaFields ? indoorClimaFields.atticPipes[9].pipe.heatLossYear : 0,
+      }
+    )
+  }

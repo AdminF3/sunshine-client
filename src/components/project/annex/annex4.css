@@ -1,0 +1,43 @@
+.firstTabContainerAnnex4, .secondTabContainerAnnex4, 
+.thirdTabContainerAnnex4, .fourthTabContainerAnnex4,
+.fifthTabContainerAnnex4, .sixthTabContainerAnnex4 {
+    width: 100%;
+    box-sizing: border-box;
+}
+.fifthTabContainerAnnex4 p { 
+    color: #354052;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.list {
+    list-style-type: none;
+}
+.list li {
+    color: #feea3b;
+}
+.list li span {
+    color: #354052;
+    font-size: 14px;
+    position: relative;
+    top: 3px;
+    margin-left: 2%;
+}
+.list li:before {
+    content:"·";
+    font-size: 490%;
+    vertical-align:middle;
+    line-height:20px;
+}                          
+.tableHeading {
+    background: linear-gradient(0deg, #F4F7FA 0%, #FFFFFF 100%);
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    color: #7f8fa4;
+    border: 1px solid #E6EAEE;
+    white-space: unset;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
